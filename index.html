@@ -152,6 +152,76 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-tjxiangm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/24/tjxiangm/">第二章、Eclipse里添加项目的步骤</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/24/tjxiangm/" class="archive-article-date">
+  	<time datetime="2019-10-24T11:47:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1、点击右上角的file，然后选择import，然后点击maven，选择：exiting-maven-project；"><a href="#1、点击右上角的file，然后选择import，然后点击maven，选择：exiting-maven-project；" class="headerlink" title="1、点击右上角的file，然后选择import，然后点击maven，选择：exiting maven project；"></a>1、点击右上角的file，然后选择import，然后点击maven，选择：exiting maven project；</h2><p><img src="/2019/10/24/tjxiangm/1.png" alt></p>
+<h2 id="2、选择要导入的项目目录。一般选一个父目录，和对应的子目录。不用全部导入。-只导入oms-webapp及parent"><a href="#2、选择要导入的项目目录。一般选一个父目录，和对应的子目录。不用全部导入。-只导入oms-webapp及parent" class="headerlink" title="2、选择要导入的项目目录。一般选一个父目录，和对应的子目录。不用全部导入。(只导入oms-webapp及parent)"></a>2、选择要导入的项目目录。一般选一个父目录，和对应的子目录。不用全部导入。(只导入oms-webapp及parent)</h2><p><img src="/2019/10/24/tjxiangm/2.png" alt></p>
+<h2 id="3、配置环境，导入项目后-只导入oms-webapp及parent-gt-右键项目-选择Properties-gt-Deployment-Assembly-gt-右侧-Add。"><a href="#3、配置环境，导入项目后-只导入oms-webapp及parent-gt-右键项目-选择Properties-gt-Deployment-Assembly-gt-右侧-Add。" class="headerlink" title="3、配置环境，导入项目后(只导入oms-webapp及parent) -&gt; 右键项目(选择Properties) -&gt; Deployment Assembly -&gt;右侧 Add。"></a>3、配置环境，导入项目后(只导入oms-webapp及parent) -&gt; 右键项目(选择Properties) -&gt; Deployment Assembly -&gt;右侧 Add。</h2><p><img src="/2019/10/24/tjxiangm/3.png" alt></p>
+<h2 id="4、点击add后，选择Archives-from-File-System-gt-然后选中lib文件里所有文件-jars-。"><a href="#4、点击add后，选择Archives-from-File-System-gt-然后选中lib文件里所有文件-jars-。" class="headerlink" title="4、点击add后，选择Archives from File System -&gt;然后选中lib文件里所有文件(jars)。"></a>4、点击add后，选择Archives from File System -&gt;然后选中lib文件里所有文件(jars)。</h2><p><img src="/2019/10/24/tjxiangm/4.png" alt></p>
+<h2 id="5、然后确认，是否有导入成功。"><a href="#5、然后确认，是否有导入成功。" class="headerlink" title="5、然后确认，是否有导入成功。"></a>5、然后确认，是否有导入成功。</h2><p><img src="/2019/10/24/tjxiangm/5.png" alt></p>
+<h2 id="6、更改一下build-path-，添加jdk。项目里，右击，弹出，选择“build-path”，选择“add-library”"><a href="#6、更改一下build-path-，添加jdk。项目里，右击，弹出，选择“build-path”，选择“add-library”" class="headerlink" title="6、更改一下build path ，添加jdk。项目里，右击，弹出，选择“build path”，选择“add library”"></a>6、更改一下build path ，添加jdk。项目里，右击，弹出，选择“build path”，选择“add library”</h2><p><img src="/2019/10/24/tjxiangm/6.png" alt></p>
+<h2 id="7、点击“Add-libray“选择，点击next"><a href="#7、点击“Add-libray“选择，点击next" class="headerlink" title="7、点击“Add libray“选择，点击next"></a>7、点击“Add libray“选择，点击next</h2><p><img src="/2019/10/24/tjxiangm/7.png" alt></p>
+<h2 id="8、选择“Alternate“，点开路劲，把对应的文件添加进去。"><a href="#8、选择“Alternate“，点开路劲，把对应的文件添加进去。" class="headerlink" title="8、选择“Alternate“，点开路劲，把对应的文件添加进去。"></a>8、选择“Alternate“，点开路劲，把对应的文件添加进去。</h2><p><img src="/2019/10/24/tjxiangm/8.png" alt></p>
+<h2 id="9、打开zookeeper文件夹下的，bin，中的ZKserver-cmd文件，然后启动服务。如果再不行就，build-project，或者clean一下，但要注意回去查看上面绑定的依赖是否还在。"><a href="#9、打开zookeeper文件夹下的，bin，中的ZKserver-cmd文件，然后启动服务。如果再不行就，build-project，或者clean一下，但要注意回去查看上面绑定的依赖是否还在。" class="headerlink" title="9、打开zookeeper文件夹下的，bin，中的ZKserver.cmd文件，然后启动服务。如果再不行就，build project，或者clean一下，但要注意回去查看上面绑定的依赖是否还在。"></a>9、打开zookeeper文件夹下的，bin，中的ZKserver.cmd文件，然后启动服务。如果再不行就，build project，或者clean一下，但要注意回去查看上面绑定的依赖是否还在。</h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/24/tjxiangm/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-thtomcat" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
